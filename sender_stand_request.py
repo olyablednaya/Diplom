@@ -10,29 +10,11 @@ def post_order():
 
 response = post_order()
 
-# Вывод статус-кода
-print("Status Code:", response.status_code)
-# Вывод тела ответа в виде текста
-print("Response Body:", response.text)
-
 #сохраняем трек номер
 track_number = response.json()["track"]
-print(track_number)
 
 def get_order_by_number(track_number):
     #выполенение гет запроса
     return requests.get(url=configuration.URL_SERVICE + configuration.GET_ORDER_NUMBER_PATH + str(track_number))
 
 response_get_order = get_order_by_number(track_number)
-print(response_get_order.status_code)
-print(response_get_order.text)
-
-# тест что код ответа равен 200. 
-def test_sucsess_create_order():
-    #arange - в файле sender_stand_request
-    #act 
-    order_response = get_order_by_number(track_number)
-    #assert 
-    assert order_response.status_code == 200
-
-test_sucsess_create_order()

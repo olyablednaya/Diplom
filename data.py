@@ -1,5 +1,3 @@
-
-
 body = {
     "firstName": "Naruto",
     "lastName": "Uchiha",
