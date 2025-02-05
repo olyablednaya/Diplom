@@ -26,3 +26,13 @@ def get_order_by_number(track_number):
 response_get_order = get_order_by_number(track_number)
 print(response_get_order.status_code)
 print(response_get_order.text)
+
+# тест что код ответа равен 200. 
+def test_sucsess_create_order():
+    #arange - в файле sender_stand_request
+    #act 
+    order_response = get_order_by_number(track_number)
+    #assert 
+    assert order_response.status_code == 200
+
+test_sucsess_create_order()
