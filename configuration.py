@@ -1,5 +1,5 @@
 #базовый URL сервиса
-URL_SERVICE = "https://e0afd323-cf85-4cce-bbb3-9b780a43ce66.serverhub.praktikum-services.ru"
+URL_SERVICE = "https://a3f82259-f11d-490a-98c6-30ad4bd465f1.serverhub.praktikum-services.ru"
 
 #путь к документации
 DOC_PATH = "/docs/" 
